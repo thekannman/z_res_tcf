@@ -157,10 +157,8 @@ int main (int argc, char *argv[]) {
     }
   }
 
-  for (int i_atom = 0; i_atom < selected_group.size(); ++i_atom) {
-    double slope = ExponentialFitSlope(params.dt(), counter.row(i_atom), 200,
-                                       tcf.length());
-    std::cout << -slope << std::endl;
-  }
+  double slope = ExponentialFitSlope(params.dt(), tcf.tcf(), 200,
+                                     tcf.length());
+  std::cout << -slope << std::endl;
 }
  // main

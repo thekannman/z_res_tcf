@@ -132,6 +132,7 @@ class TCF {
   int length() const { return length_; }
   int interval() const { return interval_; }
   inline T tcf(int i) const { return correlation_function_(i); }
+  inline arma::Row<T> tcf() const { return correlation_function_; }
 
  private:
   arma::Row<T> correlation_function_;
