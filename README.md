@@ -1,4 +1,6 @@
+This program calculates the residence time correlation function from a molecular dynamics trajectory.
 
+<<<<<<< HEAD
 
 
 <!DOCTYPE html>
@@ -728,3 +730,14 @@
   </body>
 </html>
 
+=======
+THIS PROGRAM HAS NOT BEEN THOROUGHLY TESTED!!!
+
+Current limitations include:
+* Input files must be in the .xtc format from the GROMACS simulation package.
+
+The following libraries are required:
+* The Boost program_options library.
+* The Armadillo matrix library.
+* The xdrfile library for reading GROMACS trajectory files.
+>>>>>>> 2f290031f21a2e09b9dcc4b422fd5ca8d74f8e0b
